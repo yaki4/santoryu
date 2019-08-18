@@ -20,11 +20,6 @@ html {
   font-feature-settings:"lnum";
   box-sizing: border-box;
 }
-body {
-  color: #161216;
-  background: #161216;
-  -webkit-text-stroke-color: #161216;
-}
 canvas {
   width: 100%;
   height: 100%;
@@ -42,14 +37,6 @@ canvas {
 }
 p, p a, p span {
   user-select: text;
-}
-p::selection {
-  background: #fff;
-  color: #161216;
-}
-p *::selection {
-  background: #fff;
-  color: #161216;
 }
 
 @media screen and (min-width: 320px) {
