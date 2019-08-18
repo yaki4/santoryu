@@ -2,4 +2,8 @@ node_modules
 dist
 .DS_Store
 .cache
+yarn.lock
 package-lock.json
+static/img/*
+static/models/*
+static/fonts/*
