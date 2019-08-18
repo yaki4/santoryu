@@ -1,7 +1,7 @@
 {
-  "name": "antipasto_nuxt",
+  "name": "santoryu",
   "version": "1.0.0",
-  "description": "",
+  "description": "Nuxt & antipasto starter",
   "main": "index.js",
   "private": true,
   "scripts": {
