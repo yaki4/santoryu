@@ -1,4 +1,4 @@
-# ⚔️🗡️ 三刀流, [antipasto](https://github.com/luruke/antipasto) + [nuxt](https://github.com/nuxt/nuxt.js)
+# ⚔️🗡 三刀流 [antipasto](https://github.com/luruke/antipasto) + [nuxt](https://github.com/nuxt/nuxt.js)
 
 ### Boilerplate for three.js, using some juicy stuff :
 - [bidello](https://github.com/luruke/bidello)
