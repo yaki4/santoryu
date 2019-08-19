@@ -18,7 +18,7 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: 'Renaud ROHLINGER',
+    title: '三刀流',
     htmlAttrs: {
       lang: 'en',
     },
