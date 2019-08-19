@@ -14,7 +14,7 @@
   "devDependencies": {
     "@nuxtjs/pwa": "^3.0.0-beta.16",
     "@nuxtjs/workbox": "^3.0.0-beta.16",
-    "bidello": "1.0.0",
+    "bidello": "https://github.com/RenaudROHLINGER/bidello",
     "detect-gpu": "^1.1.0",
     "glsl-fxaa": "^3.0.0",
     "glslify-bundle": "^5.1.1",

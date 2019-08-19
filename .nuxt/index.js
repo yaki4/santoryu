@@ -10,7 +10,7 @@ import { setContext, getLocation, getRouteData, normalizeError } from './utils'
 
 /* Plugins */
 
-import nuxt_plugin_workbox_e1e20b18 from 'nuxt_plugin_workbox_e1e20b18' // Source: ./workbox.js (mode: 'client')
+import nuxt_plugin_workbox_55f12e32 from 'nuxt_plugin_workbox_55f12e32' // Source: ./workbox.js (mode: 'client')
 
 // Component: <NoSsr>
 Vue.component(NoSsr.name, NoSsr)
@@ -129,8 +129,8 @@ async function createApp(ssrContext) {
 
   // Plugin execution
 
-  if (process.client && typeof nuxt_plugin_workbox_e1e20b18 === 'function') {
-    await nuxt_plugin_workbox_e1e20b18(app.context, inject)
+  if (process.client && typeof nuxt_plugin_workbox_55f12e32 === 'function') {
+    await nuxt_plugin_workbox_55f12e32(app.context, inject)
   }
 
   // If server-side, wait for async component to be resolved first
