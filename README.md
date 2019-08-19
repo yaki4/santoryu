@@ -1,5 +1,7 @@
 # ⚔️🗡 三刀流 [antipasto](https://github.com/luruke/antipasto) + [nuxt](https://github.com/nuxt/nuxt.js)
 
+Google LightHouse score : 100 + PWA
+
 ### Boilerplate for three.js, using some juicy stuff :
 - [bidello](https://github.com/luruke/bidello)
 - [magicshader](https://github.com/luruke/magicshader)
