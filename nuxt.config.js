@@ -3,17 +3,17 @@ const pkg = require('./package')
 
 module.exports = {
   mode: 'spa',
-  webfontloader: {
-    google: {
-      families: ['M PLUS 1p:900'] //Loads Lato font with weights 400 and 700
-    },
-    active() {
-      window._fontsAreLoaded = true
-    },
-    loading: () => {
-      window._fontsAreLoading = true
-    }
-  },
+  // webfontloader: {
+  //   google: {
+  //     families: ['M PLUS 1p:900']
+  //   },
+  //   active() {
+  //     window._fontsAreLoaded = true
+  //   },
+  //   loading: () => {
+  //     window._fontsAreLoading = true
+  //   }
+  // },
   /*
   ** Headers of the page
   */
@@ -33,13 +33,13 @@ module.exports = {
       { rel: 'icon', type: 'image/png', size: '32x32', href: '/oni.ico' }
     ],
     script: [
-      { async: true, src: '/js/anime.min.js'},
+      //{ async: true, src: '/js/anime.min.js'},
       { async: true, src: 'https://www.googletagmanager.com/gtag/js?id=UA-52019876-2'},
       { src: '/js/ga.js' }
     ]
   },
   loadingIndicator: {
-    name: 'loading.html'
+    // name: 'loading.html'
   },
   /*
   ** Customize the progress-bar color
@@ -52,16 +52,6 @@ module.exports = {
     background_color: '#FFF',
     lang: 'en',
     icons: [
-      // {
-      //   "src": "/img/icon-192x192.png",
-      //   "sizes": "192x192",
-      //   "type": "image/png"
-      // },
-      // {
-      //   "src": "/img/icon-512x512.png",
-      //   "sizes": "512x512",
-      //   "type": "image/png"
-      // }
     ]
   },
   /*
@@ -81,17 +71,17 @@ module.exports = {
   */
   modules: [
     '@nuxtjs/pwa',
-    'nuxt-webfontloader',
-    ['@nuxtjs/google-analytics', {
-      id: 'UA-XXXXXXXX-X'
-    }]
+    // 'nuxt-webfontloader',
+    // ['@nuxtjs/google-analytics', {
+    //   id: 'UA-XXXXXXXX-X'
+    // }]
   ],
-  googleAnalytics: {
-    id: 'UA-XXXXXXXX-X',
-    autoTracking: {
-      screenview: true
-    }
-  },
+  // googleAnalytics: {
+  //   id: 'UA-XXXXXXXX-X',
+  //   autoTracking: {
+  //     screenview: true
+  //   }
+  // },
   /*
   ** Build configuration
   */

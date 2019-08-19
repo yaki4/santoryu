@@ -1,13 +1,12 @@
 import Vue from 'vue'
 import NuxtLoading from './components/nuxt-loading.vue'
-import NuxtBuildIndicator from './components/nuxt-build-indicator'
 
 import _6f6c098b from '../layouts/default.vue'
 
 const layouts = { "_default": _6f6c098b }
 
 export default {
-  head: {"title":"三刀流","htmlAttrs":{"lang":"en"},"meta":[{"charset":"utf-8"},{"theme_color":"#111111"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":"Nuxt & antipasto starter"},{"hid":"mobile-web-app-capable","name":"mobile-web-app-capable","content":"yes"},{"hid":"apple-mobile-web-app-title","name":"apple-mobile-web-app-title","content":"Portfolio Renaud"},{"hid":"theme-color","name":"theme-color","content":"#111"},{"hid":"og:type","name":"og:type","property":"og:type","content":"website"},{"hid":"og:title","name":"og:title","property":"og:title","content":"Portfolio Renaud"},{"hid":"og:site_name","name":"og:site_name","property":"og:site_name","content":"Portfolio Renaud"},{"hid":"og:description","name":"og:description","property":"og:description","content":"### Boilerplate for nuxt & three.js, using some juicy stuff:"}],"link":[{"rel":"icon","type":"image\u002Fpng","size":"16x16","href":"\u002Foni.ico"},{"rel":"icon","type":"image\u002Fpng","size":"32x32","href":"\u002Foni.ico"},{"rel":"manifest","href":"\u002F_nuxt\u002Fmanifest.4120f150.json"}],"script":[{"async":true,"src":"\u002Fjs\u002Fanime.min.js"},{"async":true,"src":"https:\u002F\u002Fwww.googletagmanager.com\u002Fgtag\u002Fjs?id=UA-52019876-2"},{"src":"\u002Fjs\u002Fga.js"}],"style":[]},
+  head: {"title":"三刀流","htmlAttrs":{"lang":"en"},"meta":[{"charset":"utf-8"},{"theme_color":"#111111"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":"Nuxt & antipasto starter"},{"hid":"mobile-web-app-capable","name":"mobile-web-app-capable","content":"yes"},{"hid":"apple-mobile-web-app-title","name":"apple-mobile-web-app-title","content":"Portfolio Renaud"},{"hid":"theme-color","name":"theme-color","content":"#111"},{"hid":"og:type","name":"og:type","property":"og:type","content":"website"},{"hid":"og:title","name":"og:title","property":"og:title","content":"Portfolio Renaud"},{"hid":"og:site_name","name":"og:site_name","property":"og:site_name","content":"Portfolio Renaud"},{"hid":"og:description","name":"og:description","property":"og:description","content":"Nuxt & antipasto starter"}],"link":[{"rel":"icon","type":"image\u002Fpng","size":"16x16","href":"\u002Foni.ico"},{"rel":"icon","type":"image\u002Fpng","size":"32x32","href":"\u002Foni.ico"},{"rel":"manifest","href":"\u002F_nuxt\u002Fmanifest.e47dcd44.json"}],"script":[{"async":true,"src":"https:\u002F\u002Fwww.googletagmanager.com\u002Fgtag\u002Fjs?id=UA-52019876-2"},{"src":"\u002Fjs\u002Fga.js"}],"style":[]},
 
   render(h, props) {
     const loadingEl = h('NuxtLoading', { ref: 'loading' })
@@ -38,7 +37,7 @@ export default {
       domProps: {
         id: '__nuxt'
       }
-    }, [loadingEl, h(NuxtBuildIndicator), transitionEl])
+    }, [loadingEl, transitionEl])
   },
   data: () => ({
     isOnline: true,
@@ -97,8 +96,6 @@ export default {
     },
 
     setLayout(layout) {
-      if(layout && typeof layout !== 'string') throw new Error('[nuxt] Avoid using non-string value as layout property.')
-
       if (!layout || !layouts['_' + layout]) {
         layout = 'default'
       }

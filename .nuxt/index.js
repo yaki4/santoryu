@@ -11,8 +11,6 @@ import { setContext, getLocation, getRouteData, normalizeError } from './utils'
 /* Plugins */
 
 import nuxt_plugin_workbox_e1e20b18 from 'nuxt_plugin_workbox_e1e20b18' // Source: ./workbox.js (mode: 'client')
-import nuxt_plugin_googleanalytics_6d4d55ce from 'nuxt_plugin_googleanalytics_6d4d55ce' // Source: ./google-analytics.js (mode: 'client')
-import nuxt_plugin_webfontloader_10272d50 from 'nuxt_plugin_webfontloader_10272d50' // Source: ./webfontloader.js (mode: 'client')
 
 // Component: <NoSsr>
 Vue.component(NoSsr.name, NoSsr)
@@ -133,14 +131,6 @@ async function createApp(ssrContext) {
 
   if (process.client && typeof nuxt_plugin_workbox_e1e20b18 === 'function') {
     await nuxt_plugin_workbox_e1e20b18(app.context, inject)
-  }
-
-  if (process.client && typeof nuxt_plugin_googleanalytics_6d4d55ce === 'function') {
-    await nuxt_plugin_googleanalytics_6d4d55ce(app.context, inject)
-  }
-
-  if (process.client && typeof nuxt_plugin_webfontloader_10272d50 === 'function') {
-    await nuxt_plugin_webfontloader_10272d50(app.context, inject)
   }
 
   // If server-side, wait for async component to be resolved first
