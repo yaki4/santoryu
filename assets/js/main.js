@@ -15,7 +15,6 @@ class Site {
     assets.load();
     document.body.appendChild(renderer.domElement);
   }
-
   onRaf() {
     // renderer.render(scene, camera);
     postfx.render(scene, camera);
