@@ -1,6 +1,5 @@
 # ⚔️🗡 三刀流 [antipasto](https://github.com/luruke/antipasto) + [nuxt](https://github.com/nuxt/nuxt.js) + optimal blender import
 
-Google LightHouse score : 100 + PWA
 
 ### Boilerplate for three.js, using some juicy stuff :
 - [bidello](https://github.com/luruke/bidello)
@@ -11,6 +10,13 @@ Google LightHouse score : 100 + PWA
 - [glsl-fxaa](https://github.com/mattdesl/glsl-fxaa)
 - [orbit-control-es6](https://github.com/silviopaganini/orbit-controls-es6)
 - [GPGPU/FBO utility](https://github.com/luruke/antipasto/blob/master/src/js/utils/fbo.js)
+
+## THREE features :
+- Google LightHouse score : 100 + PWA
+- GLTF Loader with example
+- DRACO Compression with example
+- BASIS supercompression loader with example
+
 
 ## Build Setup
 
@@ -29,6 +35,3 @@ $ yarn start
 $ yarn run generate
 ```
 
-
-## TODO :
-- Basis Loader
