@@ -4,6 +4,4 @@ dist
 .cache
 yarn.lock
 package-lock.json
-static/img/*
-static/models/*
 static/fonts/*
